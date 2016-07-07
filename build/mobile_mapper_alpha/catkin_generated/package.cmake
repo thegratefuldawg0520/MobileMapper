@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mobile_mapper_alpha")
+set(mobile_mapper_alpha_MAINTAINER "doopy <doopy@todo.todo>")
+set(mobile_mapper_alpha_DEPRECATED "")
+set(mobile_mapper_alpha_VERSION "0.0.0")
+set(mobile_mapper_alpha_BUILD_DEPENDS "roscpp" "rospy" "std_msgs" "geometry_msgs" "sensor_msgs" "mavros" "libpcl-all-dev" "tf")
+set(mobile_mapper_alpha_RUN_DEPENDS "roscpp" "rospy" "std_msgs" "geometry_msgs" "sensor_msgs" "mavros" "libpcl-all" "tf")
+set(mobile_mapper_alpha_BUILDTOOL_DEPENDS "catkin")

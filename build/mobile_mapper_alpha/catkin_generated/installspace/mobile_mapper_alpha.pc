@@ -1,0 +1,8 @@
+prefix=/home/doopy/Documents/PixhawkMobileMapper/install
+
+Name: mobile_mapper_alpha
+Description: Description of mobile_mapper_alpha
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/doopy/Documents/PixhawkMobileMapper/install/lib 
+Requires: 

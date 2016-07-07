@@ -1,0 +1,2 @@
+mobile_mapper_alpha
+-DCATKIN_DEVEL_PREFIX=/home/doopy/Documents/PixhawkMobileMapper/devel -DCMAKE_INSTALL_PREFIX=/home/doopy/Documents/PixhawkMobileMapper/install -G Unix Makefiles
