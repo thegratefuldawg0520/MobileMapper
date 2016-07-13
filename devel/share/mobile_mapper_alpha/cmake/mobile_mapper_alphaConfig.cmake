@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(mobile_mapper_alpha_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT " " STREQUAL " ")
+if(NOT "/home/doopy/Documents/PixhawkMobileMapper/devel/include " STREQUAL " ")
   set(mobile_mapper_alpha_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "/home/doopy/Documents/PixhawkMobileMapper/devel/include")
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})
@@ -145,7 +145,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(mobile_mapper_alpha_EXPORTED_TARGETS "")
+set(mobile_mapper_alpha_EXPORTED_TARGETS "mobile_mapper_alpha_generate_messages_cpp;mobile_mapper_alpha_generate_messages_lisp;mobile_mapper_alpha_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${mobile_mapper_alpha_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -153,7 +153,7 @@ foreach(t ${mobile_mapper_alpha_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "")
+set(depends "message_runtime")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
@@ -182,7 +182,7 @@ foreach(depend ${depends})
   list(APPEND mobile_mapper_alpha_EXPORTED_TARGETS ${${mobile_mapper_alpha_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "mobile_mapper_alpha-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${mobile_mapper_alpha_DIR}/${extra})

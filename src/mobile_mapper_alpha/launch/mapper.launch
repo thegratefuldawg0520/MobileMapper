@@ -1,7 +1,7 @@
 <launch>
 	<!-- vim: set ft=xml noet : -->
 	
-	<arg name="fcu_url" default="/dev/ttyUSB0:57600" />
+	<arg name="fcu_url" default="/dev/ttyACM1:57600" />
 	<arg name="gcs_url" default="" />
 	<arg name="tgt_system" default="1" />
 	<arg name="tgt_component" default="1" />
@@ -12,6 +12,8 @@
 	<node name="hokuyo" pkg="hokuyo_node" type="hokuyo_node">
 		<param name="port" type="string" value="/dev/ttyACM0" />
 	</node>
+	<node name="rtklib_startup" pkg="mobile_mapper_alpha" type="rtklib_startup.py"/>
+	<node name="rtklib_publisher" pkg="mobile_mapper_alpha" type="rtklib_publisher.py"/>
 	
 	<include file="$(find mavros)/launch/node.launch">
 		<arg name="pluginlists_yaml" value="$(find mavros)/launch/apm_pluginlists.yaml" />

@@ -10,11 +10,12 @@ find_package(catkin REQUIRED COMPONENTS
   mavros
   tf
   sensor_msgs
+  geometry_msgs
 )
 
 find_package(OpenCV)
-
 find_package(PCL)
+find_package(message_generation)
 
 catkin_package(
 
@@ -26,6 +27,23 @@ include_directories(
 
 add_executable(world_to_imu_tf src/world_to_imu_tf.cpp)
 target_link_libraries(world_to_imu_tf ${catkin_LIBRARIES})
+
+add_executable(rtklib_node src/rtklib_publisher.py)
+target_link_libraries(rtklib_node ${catkin_LIBRARIES})
+
+add_message_files(
+  FILES
+  rtklib.msg
+)
+
+generate_messages(
+  DEPENDENCIES
+  sensor_msgs
+)
+
+catkin_package(
+  CATKIN_DEPENDS message_runtime
+)
 
 #add_executable(imgConv src/imgConv.cpp)
 #target_link_libraries(imgConv ${catkin_LIBRARIES} ${OpenCV_LIBRARIES} ${PCL_LIBRARIES})

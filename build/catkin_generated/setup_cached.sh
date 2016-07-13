@@ -7,6 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH="/home/doopy/Documents/PixhawkMobileMapper/devel/lib/x86_64-linux-gnu:/opt/ros/indigo/lib/x86_64-linux-gnu:/home/doopy/Documents/PixhawkMobileMapper/devel/lib:/opt/ros/indigo/lib"
-export PKG_CONFIG_PATH="/home/doopy/Documents/PixhawkMobileMapper/devel/lib/x86_64-linux-gnu/pkgconfig:/opt/ros/indigo/lib/x86_64-linux-gnu/pkgconfig:/home/doopy/Documents/PixhawkMobileMapper/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig"
+export LD_LIBRARY_PATH="/home/doopy/Documents/PixhawkMobileMapper/devel/lib:/opt/ros/indigo/lib"
+export PATH="/opt/ros/indigo/bin:/home/doopy/ardupilot/Tools/scripts/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-4_7-2014q2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PKG_CONFIG_PATH="/home/doopy/Documents/PixhawkMobileMapper/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig"
 export PWD="/home/doopy/Documents/PixhawkMobileMapper/build"

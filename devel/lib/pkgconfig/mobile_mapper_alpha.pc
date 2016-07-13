@@ -3,6 +3,6 @@ prefix=/home/doopy/Documents/PixhawkMobileMapper/devel
 Name: mobile_mapper_alpha
 Description: Description of mobile_mapper_alpha
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/doopy/Documents/PixhawkMobileMapper/devel/include
 Libs: -L/home/doopy/Documents/PixhawkMobileMapper/devel/lib 
-Requires: 
+Requires: message_runtime

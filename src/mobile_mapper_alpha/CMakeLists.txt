@@ -14,12 +14,8 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 find_package(OpenCV)
-
 find_package(PCL)
-
-catkin_package(
-
-)
+find_package(message_generation)
 
 include_directories(
   ${catkin_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS} ${PCL_INCLUDE_DIRS}
@@ -27,6 +23,20 @@ include_directories(
 
 add_executable(world_to_imu_tf src/world_to_imu_tf.cpp)
 target_link_libraries(world_to_imu_tf ${catkin_LIBRARIES})
+
+add_message_files(
+  FILES
+  rtklib.msg
+)
+
+generate_messages(
+  DEPENDENCIES
+  sensor_msgs
+)
+
+catkin_package(
+  CATKIN_DEPENDS message_runtime
+)
 
 #add_executable(imgConv src/imgConv.cpp)
 #target_link_libraries(imgConv ${catkin_LIBRARIES} ${OpenCV_LIBRARIES} ${PCL_LIBRARIES})
