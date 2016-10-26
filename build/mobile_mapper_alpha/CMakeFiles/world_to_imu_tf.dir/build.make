@@ -134,6 +134,7 @@ mobile_mapper_alpha/world_to_imu_tf: /usr/lib/x86_64-linux-gnu/libboost_system.s
 mobile_mapper_alpha/world_to_imu_tf: /usr/lib/x86_64-linux-gnu/libboost_thread.so
 mobile_mapper_alpha/world_to_imu_tf: /usr/lib/x86_64-linux-gnu/libpthread.so
 mobile_mapper_alpha/world_to_imu_tf: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+mobile_mapper_alpha/world_to_imu_tf: /opt/ros/indigo/lib/libusb_cam.so
 mobile_mapper_alpha/world_to_imu_tf: mobile_mapper_alpha/CMakeFiles/world_to_imu_tf.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable world_to_imu_tf"
 	cd /home/doopy/Documents/PixhawkMobileMapper/build/mobile_mapper_alpha && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/world_to_imu_tf.dir/link.txt --verbose=$(VERBOSE)

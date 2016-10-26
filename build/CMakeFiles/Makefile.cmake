@@ -180,6 +180,8 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/indigo/share/tf2_py/cmake/tf2_pyConfig.cmake"
   "/opt/ros/indigo/share/tf2_ros/cmake/tf2_rosConfig-version.cmake"
   "/opt/ros/indigo/share/tf2_ros/cmake/tf2_rosConfig.cmake"
+  "/opt/ros/indigo/share/usb_cam/cmake/usb_camConfig-version.cmake"
+  "/opt/ros/indigo/share/usb_cam/cmake/usb_camConfig.cmake"
   "/opt/ros/indigo/share/xmlrpcpp/cmake/xmlrpcppConfig-version.cmake"
   "/opt/ros/indigo/share/xmlrpcpp/cmake/xmlrpcppConfig.cmake"
   "/usr/lib/vtk-5.8/CMake/vtkMakeInstantiator.cmake"

@@ -1,8 +1,0 @@
-digraph G {
-"fcu" -> "laser"[label="Broadcaster: /fcu_to_laser\nAverage rate: 20.122 Hz\nMost recent transform: 1467855597.781 ( -0.039 sec old)\nBuffer length: 4.920 sec\n"];
-"map" -> "fcu"[label="Broadcaster: /mobile_mapper_pose\nAverage rate: 4.863 Hz\nMost recent transform: 1467855597.526 ( 0.216 sec old)\nBuffer length: 4.524 sec\n"];
-edge [style=invis];
- subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
-"Recorded at time: 1467855597.742"[ shape=plaintext ] ;
- }->"map";
-}

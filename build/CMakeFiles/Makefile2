@@ -880,8 +880,8 @@ clean: mobile_mapper_alpha/CMakeFiles/mobile_mapper_alpha_gencpp.dir/clean
 
 # All Build rule for target.
 mobile_mapper_alpha/CMakeFiles/mobile_mapper_alpha_generate_messages.dir/all: mobile_mapper_alpha/CMakeFiles/mobile_mapper_alpha_generate_messages_py.dir/all
-mobile_mapper_alpha/CMakeFiles/mobile_mapper_alpha_generate_messages.dir/all: mobile_mapper_alpha/CMakeFiles/mobile_mapper_alpha_generate_messages_cpp.dir/all
 mobile_mapper_alpha/CMakeFiles/mobile_mapper_alpha_generate_messages.dir/all: mobile_mapper_alpha/CMakeFiles/mobile_mapper_alpha_generate_messages_lisp.dir/all
+mobile_mapper_alpha/CMakeFiles/mobile_mapper_alpha_generate_messages.dir/all: mobile_mapper_alpha/CMakeFiles/mobile_mapper_alpha_generate_messages_cpp.dir/all
 	$(MAKE) -f mobile_mapper_alpha/CMakeFiles/mobile_mapper_alpha_generate_messages.dir/build.make mobile_mapper_alpha/CMakeFiles/mobile_mapper_alpha_generate_messages.dir/depend
 	$(MAKE) -f mobile_mapper_alpha/CMakeFiles/mobile_mapper_alpha_generate_messages.dir/build.make mobile_mapper_alpha/CMakeFiles/mobile_mapper_alpha_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/doopy/Documents/PixhawkMobileMapper/build/CMakeFiles 

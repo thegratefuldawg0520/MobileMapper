@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   tf
   sensor_msgs
   geometry_msgs
+  usb_cam
 )
 
 find_package(OpenCV)

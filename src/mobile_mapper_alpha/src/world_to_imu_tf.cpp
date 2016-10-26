@@ -3,14 +3,13 @@
 #include <sensor_msgs/Imu.h>
 
 
-
 tf::StampedTransform transform_;
 tf::Quaternion tmp_;
 
 void imuCallback(const sensor_msgs::Imu& imu_msg){
 	
 	static tf::TransformBroadcaster tfB_;
-	
+
 	tf::quaternionMsgToTF(imu_msg.orientation, tmp_);
 	
 	tfScalar yaw, pitch, roll;

@@ -2,4 +2,4 @@
 source_root_dir = "/home/doopy/Documents/PixhawkMobileMapper/src"
 whitelisted_packages = "".split(';') if "" != "" else []
 blacklisted_packages = "".split(';') if "" != "" else []
-underlay_workspaces = "/home/doopy/Documents/PixhawkMobileMapper/devel;/opt/ros/indigo".split(';') if "/home/doopy/Documents/PixhawkMobileMapper/devel;/opt/ros/indigo" != "" else []
+underlay_workspaces = "/opt/ros/indigo".split(';') if "/opt/ros/indigo" != "" else []

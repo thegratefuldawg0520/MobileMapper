@@ -9,10 +9,13 @@
 
 	<node pkg="tf" type='static_transform_publisher' name='fcu_to_laser' args='0 0 0 0 0 0 fcu laser 50'/>
 	<node pkg="mobile_mapper_alpha" type="world_to_imu_tf" name="mobile_mapper_pose" />
+	<node name="usb_cam_node" pkg="usb_cam" type="usb_cam_node" />
+				<param name="port" type="string" value="/dev/video0" pixel_format="uyvy" />
 	<node name="hokuyo" pkg="hokuyo_node" type="hokuyo_node">
 		<param name="port" type="string" value="/dev/ttyACM0" />
 	</node>
-	<node name="rtklib" pkg="mobile_mapper_alpha" type="rtklib_node">
+	<node name="rtklib_startup" pkg="mobile_mapper_alpha" type="rtklib_startup.py"/>
+	<node name="rtklib_publisher" pkg="mobile_mapper_alpha" type="rtklib_publisher.py"/>
 	
 	<include file="$(find mavros)/launch/node.launch">
 		<arg name="pluginlists_yaml" value="$(find mavros)/launch/apm_pluginlists.yaml" />
